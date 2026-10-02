@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UtopIA | Del algoritmo al medicamento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+        .font-heading { font-family: 'Space Grotesk', sans-serif; }
+        .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+        /* Tonos Navy Pastel personalizados */
+        .bg-navy-pastel { background-color: #3B526B; }
+        .bg-navy-pastel-light { background-color: #4A637F; }
+        .bg-navy-pastel-dark { background-color: #2D4055; }
+        .border-navy { border-color: #5B7592; }
+    </style>
+</head>
+<body class="font-sans bg-navy-pastel text-slate-100 antialiased selection:bg-cyan-300 selection:text-navy-pastel-dark">
+
+    <!-- Botón flotante de Contacto (Gmail) -->
+    <a href="mailto:tu_correo_utopia@gmail.com" class="fixed bottom-6 right-6 w-14 h-14 bg-red-500 hover:bg-red-600 text-white rounded-full flex items-center justify-center text-2xl shadow-[0_4px_20px_rgba(239,68,68,0.5)] z-50 transition-transform hover:scale-110">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <!-- Navegación -->
+    <nav class="fixed top-0 left-0 w-full z-40 bg-navy-pastel/90 backdrop-blur-md border-b border-navy">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="font-heading text-2xl font-bold tracking-tight text-white">Utop<span class="text-cyan-300">IA</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+                <a href="#sobre-nosotros" class="hover:text-cyan-300 transition">Quiénes Somos</a>
+                <a href="#areas" class="hover:text-cyan-300 transition">De qué hablaremos</a>
+                <a href="#metodo" class="hover:text-cyan-300 transition">Metodología</a>
+                <a href="#equipo" class="hover:text-cyan-300 transition">Equipo</a>
+            </div>
+            <a href="https://instagram.com/utopia_biotech" target="_blank" class="bg-cyan-400/10 border border-cyan-400/30 hover:bg-cyan-400 hover:text-navy-pastel-dark text-cyan-300 font-semibold text-sm px-5 py-2.5 rounded-xl transition flex items-center gap-2">
+                <i class="fa-brands fa-instagram text-base"></i> Síguenos
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-36 pb-24 md:pt-40 md:pb-32 px-6 overflow-hidden">
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-400/10 border border-cyan-400/30 text-cyan-300 text-xs font-semibold tracking-wide uppercase mb-8 shadow-sm">
+                <i class="fa-solid fa-dna"></i> Proyecto de Biotecnología UMH
+            </div>
+
+            <!-- Logo circular proporcionado -->
+            <div class="w-40 h-40 mx-auto mb-8 bg-white rounded-full flex items-center justify-center shadow-xl border-4 border-navy overflow-hidden">
+                <img src="image_70.png" alt="Logo UtopIA" class="w-full h-full object-cover">
+            </div>
+
+            <h1 class="font-heading text-5xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight mb-6 leading-tight">
+                Del algoritmo al medicamento
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
+                Descubre cómo la inteligencia artificial está transformando la ciencia y el desarrollo de fármacos, desde el laboratorio hasta el paciente.
+            </p>
+        </div>
+    </header>
+
+    <!-- Quiénes Somos -->
+    <section id="sobre-nosotros" class="py-24 px-6 border-t border-navy bg-navy-pastel-dark">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="text-cyan-300 font-semibold uppercase tracking-widest text-xs block mb-3">¿Quiénes somos?</span>
+            <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-8">
+                SOMOS <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">UtopIA</span>
+            </h2>
+            <div class="bg-navy-pastel-light p-10 rounded-2xl border border-navy shadow-lg text-left max-w-3xl mx-auto">
+                <p class="text-xl text-white mb-6 leading-relaxed">
+                    Un grupo de estudiantes de Biotecnología de la UMH.
+                </p>
+                <p class="text-lg text-slate-300 leading-relaxed font-light">
+                    Divulgamos cómo la IA está transformando el desarrollo de fármacos y los retos éticos y legales que plantea.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- De qué hablaremos -->
+    <section id="areas" class="py-24 px-6 border-t border-navy">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-cyan-300 font-semibold uppercase tracking-widest text-xs block mb-2">¿De qué hablaremos?</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white">La IA, del laboratorio al paciente</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-navy-pastel-light p-8 rounded-2xl border border-navy hover:border-cyan-400 transition duration-300">
+                    <div class="text-cyan-300 font-heading text-3xl font-bold mb-4 opacity-80">01</div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Descubrimiento de fármacos</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed font-light">Cómo la IA ayuda a encontrar moléculas que podrían convertirse en medicamentos.</p>
+                </div>
+                <div class="bg-navy-pastel-light p-8 rounded-2xl border border-navy hover:border-cyan-400 transition duration-300">
+                    <div class="text-cyan-300 font-heading text-3xl font-bold mb-4 opacity-80">02</div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Diagnóstico y ensayos clínicos</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed font-light">Cómo puede mejorar el diagnóstico y estudiar mejor si un tratamiento funciona.</p>
+                </div>
+                <div class="bg-navy-pastel-light p-8 rounded-2xl border border-navy hover:border-cyan-400 transition duration-300">
+                    <div class="text-cyan-300 font-heading text-3xl font-bold mb-4 opacity-80">03</div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Ética, privacidad y legislación</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed font-light">Qué riesgos plantea y qué garantías son necesarias para usarla con confianza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Así lo vamos a contar -->
+    <section id="metodo" class="py-24 px-6 border-t border-navy bg-navy-pastel-dark">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-cyan-300 font-semibold uppercase tracking-widest text-xs block mb-2">Así lo vamos a contar</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white">De la pregunta a la respuesta</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="bg-navy-pastel flex gap-6 p-6 rounded-2xl border border-navy">
+                    <div class="text-cyan-300 font-heading text-3xl font-bold opacity-80">01</div>
+                    <div>
+                        <h3 class="font-heading text-xl font-bold text-white mb-2">La visión de la gente</h3>
+                        <p class="text-slate-300 text-sm font-light">Entrevistas para conocer qué pensamos y qué dudas tenemos sobre la IA en salud.</p>
+                    </div>
+                </div>
+
+                <div class="bg-navy-pastel flex gap-6 p-6 rounded-2xl border border-navy">
+                    <div class="text-cyan-300 font-heading text-3xl font-bold opacity-80">02</div>
+                    <div>
+                        <h3 class="font-heading text-xl font-bold text-white mb-2">La visión experta</h3>
+                        <p class="text-slate-300 text-sm font-light">Conversaciones con científicos y profesionales que trabajan en investigación y biomedicina.</p>
+                    </div>
+                </div>
+
+                <div class="bg-navy-pastel flex gap-6 p-6 rounded-2xl border border-navy">
+                    <div class="text-cyan-300 font-heading text-3xl font-bold opacity-80">03</div>
+                    <div>
+                        <h3 class="font-heading text-xl font-bold text-white mb-2">Del descubrimiento al medicamento</h3>
+                        <p class="text-slate-300 text-sm font-light">Publicaciones para entender, paso a paso, cómo se desarrolla un fármaco.</p>
+                    </div>
+                </div>
+
+                <div class="bg-navy-pastel flex gap-6 p-6 rounded-2xl border border-navy">
+                    <div class="text-cyan-300 font-heading text-3xl font-bold opacity-80">04</div>
+                    <div>
+                        <h3 class="font-heading text-xl font-bold text-white mb-2">IA al día</h3>
+                        <p class="text-slate-300 text-sm font-light">Curiosidades, avances y noticias sobre inteligencia artificial y biomedicina.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo (Sin imágenes) -->
+    <section id="equipo" class="py-24 px-6 border-t border-navy">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-cyan-300 font-semibold uppercase tracking-widest text-xs block mb-2">Nuestro Equipo</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white">
+                    Estudiantes detrás de <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">UtopIA</span>
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-cyan-400/50 transition">
+                    <h3 class="font-heading text-lg font-bold text-white">Álvaro Barberá</h3>
+                    <p class="text-xs text-cyan-300 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
+                </div>
+                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-cyan-400/50 transition">
+                    <h3 class="font-heading text-lg font-bold text-white">Javier Sáez</h3>
+                    <p class="text-xs text-cyan-300 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
+                </div>
+                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-cyan-400/50 transition">
+                    <h3 class="font-heading text-lg font-bold text-white">Alberto Esteban</h3>
+                    <p class="text-xs text-cyan-300 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
+                </div>
+                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-cyan-400/50 transition">
+                    <h3 class="font-heading text-lg font-bold text-white">Jesús Montes</h3>
+                    <p class="text-xs text-cyan-300 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
+                </div>
+                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-cyan-400/50 transition">
+                    <h3 class="font-heading text-lg font-bold text-white">Iago Brugarolas</h3>
+                    <p class="text-xs text-cyan-300 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
+                </div>
+                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-cyan-400/50 transition">
+                    <h3 class="font-heading text-lg font-bold text-white">Carlos Pastor</h3>
+                    <p class="text-xs text-cyan-300 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-6 border-t border-navy bg-navy-pastel-dark text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-heading text-2xl font-bold text-white mb-8">Esto es solo el principio</h2>
+            
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="https://instagram.com/utopia_biotech" target="_blank" class="w-12 h-12 rounded-full bg-navy-pastel border border-navy flex items-center justify-center text-cyan-300 hover:bg-cyan-400 hover:text-navy-pastel-dark transition duration-300 text-xl">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://tiktok.com/@utopia_biotech" target="_blank" class="w-12 h-12 rounded-full bg-navy-pastel border border-navy flex items-center justify-center text-cyan-300 hover:bg-cyan-400 hover:text-navy-pastel-dark transition duration-300 text-xl">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://x.com/utopia_biotech" target="_blank" class="w-12 h-12 rounded-full bg-navy-pastel border border-navy flex items-center justify-center text-cyan-300 hover:bg-cyan-400 hover:text-navy-pastel-dark transition duration-300 text-xl">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+
+            <div class="text-slate-400 text-xs uppercase tracking-widest">
+                <p>UtopIA © 2026 · Proyecto Divulgativo de Biotecnología UMH</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
