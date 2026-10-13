@@ -38,16 +38,16 @@
                 <a href="#metodo" class="hover:text-cyan-300 transition">Metodología</a>
                 <a href="#equipo" class="hover:text-cyan-300 transition">Equipo</a>
             </div>
-        <div class="flex items-center gap-3">
+         <div class="flex items-center">
     <a href="https://instagram.com/utopia_biotech" target="_blank" class="bg-cyan-400/10 border border-cyan-400/30 hover:bg-cyan-400 hover:text-navy-pastel-dark text-cyan-300 font-semibold text-sm px-5 py-2.5 rounded-xl transition flex items-center gap-2">
         <i class="fa-brands fa-instagram text-base"></i> Síguenos
     </a>
     
-    <!-- Logo pequeño que aparecerá progresivamente al hacer scroll -->
-    <div id="nav-logo" class="w-10 h-10 bg-white rounded-full flex items-center justify-center border-2 border-navy overflow-hidden opacity-0 pointer-events-none transition-all duration-500 ease-in-out transform scale-90">
+    <!-- Logo pequeño configurado con ancho 0 inicial -->
+    <div id="nav-logo" class="w-0 h-10 ml-0 border-0 bg-white rounded-full flex items-center justify-center border-navy overflow-hidden opacity-0 pointer-events-none transition-all duration-500 ease-in-out transform scale-90">
         <img src="image_70.png" alt="Logo UtopIA" class="w-full h-full object-cover">
     </div>
-</div>    
+</div>   
         </div>
     </nav>
 
@@ -225,25 +225,25 @@
         </div>
     </footer>
 <!-- Script para detectar el scroll y mostrar el logo superior suavemente -->
-    <script>
-        const heroLogo = document.getElementById('hero-logo');
-        const navLogo = document.getElementById('nav-logo');
+ <script>
+    const heroLogo = document.getElementById('hero-logo');
+    const navLogo = document.getElementById('nav-logo');
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) {
-                    // Cuando el logo principal sale de la pantalla -> Mostrar logo superior
-                    navLogo.classList.remove('opacity-0', 'pointer-events-none', 'scale-90');
-                    navLogo.classList.add('opacity-100', 'pointer-events-auto', 'scale-100');
-                } else {
-                    // Cuando el logo principal vuelve a ser visible -> Ocultar logo superior
-                    navLogo.classList.remove('opacity-100', 'pointer-events-auto', 'scale-100');
-                    navLogo.classList.add('opacity-0', 'pointer-events-none', 'scale-90');
-                }
-            });
-        }, { threshold: 0 });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                // Despliega la anchura, añade margen y muestra el logo
+                navLogo.classList.remove('w-0', 'opacity-0', 'pointer-events-none', 'scale-90', 'ml-0', 'border-0');
+                navLogo.classList.add('w-10', 'opacity-100', 'pointer-events-auto', 'scale-100', 'ml-3', 'border-2');
+            } else {
+                // Pliega la anchura a 0 y oculta el logo de forma limpia
+                navLogo.classList.remove('w-10', 'opacity-100', 'pointer-events-auto', 'scale-100', 'ml-3', 'border-2');
+                navLogo.classList.add('w-0', 'opacity-0', 'pointer-events-none', 'scale-90', 'ml-0', 'border-0');
+            }
+        });
+    }, { threshold: 0 });
 
-        observer.observe(heroLogo);
-    </script>
+    observer.observe(heroLogo);
+</script>   
 </body>
 </html>
