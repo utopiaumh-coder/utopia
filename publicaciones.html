@@ -30,31 +30,89 @@
         </div>
     </nav>
 
-    <!-- Contenido principal -->
-    <main class="pt-32 pb-20 px-6 max-w-5xl mx-auto w-full flex-grow">
-        <div class="text-center mb-12">
-            <span class="text-cyan-300 font-semibold uppercase tracking-widest text-xs block mb-2">Blog y Artículos</span>
-            <h1 class="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Todas nuestras publicaciones</h1>
-            <p class="text-slate-300 max-w-2xl mx-auto font-light">Explora las últimas novedades, investigaciones y análisis sobre el impacto de la Inteligencia Artificial en la biomedicina.</p>
+    <!-- Encabezado de la página -->
+    <main class="pt-32 pb-20 px-6 max-w-6xl mx-auto w-full flex-grow">
+        <div class="text-center mb-16">
+            <span class="text-cyan-300 font-semibold uppercase tracking-widest text-xs block mb-2">Divulgación & Artículos</span>
+            <h1 class="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Nuestras Publicaciones</h1>
+            <p class="text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+                Profundiza en cada uno de nuestros temas, análisis y publicaciones sobre el impacto de la Inteligencia Artificial en el desarrollo de fármacos y la biomedicina.
+            </p>
         </div>
 
-        <!-- Contenedor de artículos -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-           
-                
-            <!-- Publicación 1 -->
-            <article class="bg-navy-pastel-light rounded-2xl border border-navy overflow-hidden shadow-lg flex flex-col">
-                <img src="imagenpublicacion1_1.png" alt="Publicación 1" class="w-full h-48 object-cover">
-                <div class="p-6 flex flex-col flex-grow">
-                    <span class="text-cyan-300 text-xs font-semibold uppercase mb-2">La IA, del laboratorio al paciente</span>
-                    <h2 class="font-heading text-xl font-bold text-white mb-3">¿Puede la IA ayudar a descubrir nuevos fármacos?</h2>
-                    <p class="text-slate-300 text-sm font-light mb-6 flex-grow">Un recorrido detallado sobre quiénes somos, nuestros objetivos y cómo vamos a cumplirlos.</p>
-                    <a href="#" class="text-cyan-300 hover:underline text-sm font-semibold flex items-center gap-2">Leer artículo <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        <!-- Lista de publicaciones en formato columna (Imagen Izquierda / Texto Derecha) -->
+        <div class="space-y-12">
+
+            <!-- PUBLICACIÓN 1 (id="pub-1") -->
+            <article id="pub-1" class="bg-navy-pastel-light rounded-2xl border border-navy p-6 md:p-8 shadow-xl grid grid-cols-1 md:grid-cols-12 gap-8 items-center scroll-mt-28">
+                <!-- Columna Izquierda: Imagen -->
+                <div class="md:col-span-5 rounded-xl overflow-hidden border border-navy/60 shadow-md">
+                    <img src="imagenpublicacion1_1.png" alt="Publicación 1" class="w-full h-auto max-h-[380px] object-cover hover:scale-105 transition duration-500">
+                </div>
+
+                <!-- Columna Derecha: Texto explicativo -->
+                <div class="md:col-span-7 flex flex-col justify-center">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-400/10 border border-cyan-400/30 text-cyan-300 text-xs font-semibold uppercase w-fit mb-3">
+                        <i class="fa-solid fa-dna"></i> Publicación #01
+                    </div>
+                    
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-white mb-4 leading-snug">
+                        ¿Puede la IA ayudar a descubrir nuevos fármacos?
+                    </h2>
+                    
+                    <div class="text-slate-200 text-sm md:text-base font-light leading-relaxed space-y-3 mb-6">
+                        <p>
+                            En esta primera entrega de <strong>UtopIA</strong> nos presentamos oficialmente y explicamos cuál es el propósito de nuestro proyecto divulgativo en la UMH.
+                        </p>
+                        <p>
+                            Analizamos cómo la Inteligencia Artificial está cambiando el paradigma del descubrimiento de medicamentos, reduciendo tiempos de investigación de años a meses y permitiendo explorar millones de moléculas en silico antes de llegar al laboratorio.
+                        </p>
+                    </div>
+
+                    <!-- Enlace directo al post de Instagram -->
+                    <div class="pt-4 border-t border-navy/50">
+                        <a href="https://www.instagram.com/p/DdwmIQmCBJ6/?vrfl=Y3luMXZycnI3OTF1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-cyan-400/10 hover:bg-cyan-400 hover:text-navy-pastel-dark text-cyan-300 font-semibold text-xs px-4 py-2.5 rounded-xl border border-cyan-400/30 transition">
+                            Ver publicación en Instagram <i class="fa-brands fa-instagram text-base"></i>
+                        </a>
+                    </div>
                 </div>
             </article>
 
-            
+            <!-- PUBLICACIÓN 2 (id="pub-2") -->
+            <article id="pub-2" class="bg-navy-pastel-light rounded-2xl border border-navy p-6 md:p-8 shadow-xl grid grid-cols-1 md:grid-cols-12 gap-8 items-center scroll-mt-28">
+                <!-- Columna Izquierda: Imagen -->
+                <div class="md:col-span-5 rounded-xl overflow-hidden border border-navy/60 shadow-md">
+                    <img src="image_70.png" alt="Publicación 2" class="w-full h-auto max-h-[380px] object-cover hover:scale-105 transition duration-500">
+                </div>
+
+                <!-- Columna Derecha: Texto explicativo -->
+                <div class="md:col-span-7 flex flex-col justify-center">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-400/10 border border-cyan-400/30 text-cyan-300 text-xs font-semibold uppercase w-fit mb-3">
+                        <i class="fa-solid fa-shield-halved"></i> Publicación #02
+                    </div>
+                    
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-white mb-4 leading-snug">
+                        Retos éticos de los algoritmos de diagnóstico médico
+                    </h2>
+                    
+                    <div class="text-slate-200 text-sm md:text-base font-light leading-relaxed space-y-3 mb-6">
+                        <p>
+                            El uso de modelos de aprendizaje automático en el diagnóstico médico plantea cuestiones trascendentales sobre la privacidad de los datos de los pacientes y la fiabilidad de las decisiones clínicas.
+                        </p>
+                        <p>
+                            En este artículo exploramos la legislación actual, los sesgos en los datos de entrenamiento y las garantías éticas necesarias para asegurar que la tecnología sea una ayuda segura y transparente para el personal sanitario.
+                        </p>
+                    </div>
+
+                    <!-- Enlace directo al post de Instagram -->
+                    <div class="pt-4 border-t border-navy/50">
+                        <a href="https://instagram.com/utopia_biotech" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-cyan-400/10 hover:bg-cyan-400 hover:text-navy-pastel-dark text-cyan-300 font-semibold text-xs px-4 py-2.5 rounded-xl border border-cyan-400/30 transition">
+                            Ver publicación en Instagram <i class="fa-brands fa-instagram text-base"></i>
+                        </a>
+                    </div>
+                </div>
             </article>
+
         </div>
     </main>
 
