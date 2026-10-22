@@ -43,32 +43,32 @@
         <!-- Lista de publicaciones en formato columna (Imagen Izquierda / Texto Derecha) -->
         <div class="space-y-12">
 
-            <!-- PUBLICACIÓN 3 (id="pub-3") -->
+           <!-- PUBLICACIÓN 3 (id="pub-3") -->
 <article id="pub-3" class="bg-navy-pastel-light rounded-2xl border border-navy p-6 md:p-8 shadow-xl grid grid-cols-1 md:grid-cols-12 gap-8 items-start scroll-mt-28">
     
-    <!-- Columna Izquierda: Portada Destacada + Miniaturas + Sticky -->
+    <!-- Columna Izquierda: Portada Destacada Interactiva + Miniaturas -->
     <div class="md:col-span-5 md:sticky md:top-28 space-y-3">
-        <!-- Imagen Principal (Portada) -->
+        <!-- Imagen Principal Grande (Cambia al hacer clic en las miniaturas) -->
         <div class="rounded-xl overflow-hidden border border-navy/60 shadow-md bg-navy-pastel-dark">
-            <img src="publicacion_delalgoritmo_al_medicamento_1.1.png" alt="Publicación 3 - Portada" class="w-full h-auto object-cover hover:scale-105 transition duration-500">
+            <img id="main-img-pub3" src="publicacion_delalgoritmo_al_medicamento_1.1.png" alt="Publicación 3 - Portada" class="w-full h-auto object-cover transition-all duration-300">
         </div>
 
-        <!-- Fila de diapositivas secundarias (Imágenes 1.2 a 1.6) -->
+        <!-- Fila de miniaturas interactiva (Haz clic para intercambiar con la grande) -->
         <div class="grid grid-cols-5 gap-2 bg-navy-pastel-dark p-2.5 rounded-xl border border-navy/60 shadow-md">
-            <div class="rounded-lg overflow-hidden border border-navy/40 aspect-square bg-navy-pastel flex items-center justify-center">
-                <img src="publicacion_delalgoritmo_al_medicamento_1.2.png" alt="Diapositiva 2" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+            <div class="rounded-lg overflow-hidden border border-navy/40 hover:border-cyan-400 aspect-square bg-navy-pastel flex items-center justify-center cursor-pointer transition">
+                <img src="publicacion_delalgoritmo_al_medicamento_1.2.png" alt="Diapositiva 2" onclick="swapImage('main-img-pub3', this)" class="w-full h-full object-cover hover:opacity-80 transition">
             </div>
-            <div class="rounded-lg overflow-hidden border border-navy/40 aspect-square bg-navy-pastel flex items-center justify-center">
-                <img src="publicacion_delalgoritmo_al_medicamento_1.3.png" alt="Diapositiva 3" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+            <div class="rounded-lg overflow-hidden border border-navy/40 hover:border-cyan-400 aspect-square bg-navy-pastel flex items-center justify-center cursor-pointer transition">
+                <img src="publicacion_delalgoritmo_al_medicamento_1.3.png" alt="Diapositiva 3" onclick="swapImage('main-img-pub3', this)" class="w-full h-full object-cover hover:opacity-80 transition">
             </div>
-            <div class="rounded-lg overflow-hidden border border-navy/40 aspect-square bg-navy-pastel flex items-center justify-center">
-                <img src="publicacion_delalgoritmo_al_medicamento_1.4.png" alt="Diapositiva 4" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+            <div class="rounded-lg overflow-hidden border border-navy/40 hover:border-cyan-400 aspect-square bg-navy-pastel flex items-center justify-center cursor-pointer transition">
+                <img src="publicacion_delalgoritmo_al_medicamento_1.4.png" alt="Diapositiva 4" onclick="swapImage('main-img-pub3', this)" class="w-full h-full object-cover hover:opacity-80 transition">
             </div>
-            <div class="rounded-lg overflow-hidden border border-navy/40 aspect-square bg-navy-pastel flex items-center justify-center">
-                <img src="publicacion_delalgoritmo_al_medicamento_1.5.png" alt="Diapositiva 5" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+            <div class="rounded-lg overflow-hidden border border-navy/40 hover:border-cyan-400 aspect-square bg-navy-pastel flex items-center justify-center cursor-pointer transition">
+                <img src="publicacion_delalgoritmo_al_medicamento_1.5.png" alt="Diapositiva 5" onclick="swapImage('main-img-pub3', this)" class="w-full h-full object-cover hover:opacity-80 transition">
             </div>
-            <div class="rounded-lg overflow-hidden border border-navy/40 aspect-square bg-navy-pastel flex items-center justify-center">
-                <img src="publicacion_delalgoritmo_al_medicamento_1.6.png" alt="Diapositiva 6" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+            <div class="rounded-lg overflow-hidden border border-navy/40 hover:border-cyan-400 aspect-square bg-navy-pastel flex items-center justify-center cursor-pointer transition">
+                <img src="publicacion_delalgoritmo_al_medicamento_1.6.png" alt="Diapositiva 6" onclick="swapImage('main-img-pub3', this)" class="w-full h-full object-cover hover:opacity-80 transition">
             </div>
         </div>
     </div>
@@ -198,5 +198,24 @@
         UtopIA © 2026 · Proyecto Divulgativo de Biotecnología UMH
     </footer>
 
+<script>
+    function swapImage(mainImgId, thumbElement) {
+        const mainImg = document.getElementById(mainImgId);
+        if (!mainImg || !thumbElement) return;
+
+        // Guarda temporalmente los datos de la imagen principal
+        const tempSrc = mainImg.src;
+        const tempAlt = mainImg.alt;
+
+        // Asigna a la principal la imagen de la miniatura pulsada
+        mainImg.src = thumbElement.src;
+        mainImg.alt = thumbElement.alt;
+
+        // Coloca en la miniatura la imagen que estaba en la principal
+        thumbElement.src = tempSrc;
+        thumbElement.alt = tempAlt;
+    }
+</script>
+    
 </body>
 </html>
