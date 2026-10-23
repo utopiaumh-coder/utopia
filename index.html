@@ -1,4 +1,3 @@
-HTML
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -11,18 +10,37 @@ HTML
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
         .font-heading { font-family: 'Space Grotesk', sans-serif; }
         .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
-        /* Tonos Navy Pastel personalizados */
-        .bg-navy-pastel { background-color: #3B526B; }
-        .bg-navy-pastel-light { background-color: #4A637F; }
-        .bg-navy-pastel-dark { background-color: #2D4055; }
-        .border-navy { border-color: #5B7592; }
         
-        /* Ocultar barra de scroll del carrusel */
+        /* Paleta Halloween (Marrón Oscuro & Naranja) */
+        .bg-navy-pastel { background-color: #1A120B; }
+        .bg-navy-pastel-light { background-color: #2C1A11; }
+        .bg-navy-pastel-dark { background-color: #120B07; }
+        .border-navy { border-color: #54321A; }
+        
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="font-sans bg-navy-pastel text-slate-100 antialiased selection:bg-cyan-300 selection:text-navy-pastel-dark">
+<body class="font-sans bg-navy-pastel text-slate-100 antialiased selection:bg-orange-400 selection:text-navy-pastel-dark">
+
+    <!-- Decoración Halloween: Telarañas en Esquinas Superiores -->
+    <div class="fixed top-0 left-0 w-32 h-32 md:w-48 md:h-48 z-50 pointer-events-none opacity-40 text-orange-500/80">
+        <svg viewBox="0 0 100 100" class="w-full h-full fill-current">
+            <path d="M0 0 v100 Q 20 80, 0 60 Q 30 70, 0 40 Q 50 50, 0 20 Q 70 30, 0 0 Z"></path>
+            <path d="M0 0 L 100 0 Q 80 20, 60 0 Q 70 30, 40 0 Q 50 50, 20 0 Q 30 70, 0 0 Z"></path>
+            <path d="M0 0 L100 100 M0 0 L50 100 M0 0 L100 50 M0 0 L25 100 M0 0 L100 25" stroke="currentColor" stroke-width="1.5" fill="none"></path>
+            <path d="M20 0 Q 20 20, 0 20 M40 0 Q 40 40, 0 40 M60 0 Q 60 60, 0 60 M80 0 Q 80 80, 0 80" stroke="currentColor" stroke-width="1.5" fill="none"></path>
+        </svg>
+    </div>
+
+    <div class="fixed top-0 right-0 w-32 h-32 md:w-48 md:h-48 z-50 pointer-events-none opacity-40 text-orange-500/80 transform scale-x-[-1]">
+        <svg viewBox="0 0 100 100" class="w-full h-full fill-current">
+            <path d="M0 0 v100 Q 20 80, 0 60 Q 30 70, 0 40 Q 50 50, 0 20 Q 70 30, 0 0 Z"></path>
+            <path d="M0 0 L 100 0 Q 80 20, 60 0 Q 70 30, 40 0 Q 50 50, 0 20 Q 70 30, 0 0 Z"></path>
+            <path d="M0 0 L100 100 M0 0 L50 100 M0 0 L100 50 M0 0 L25 100 M0 0 L100 25" stroke="currentColor" stroke-width="1.5" fill="none"></path>
+            <path d="M20 0 Q 20 20, 0 20 M40 0 Q 40 40, 0 40 M60 0 Q 60 60, 0 60 M80 0 Q 80 80, 0 80" stroke="currentColor" stroke-width="1.5" fill="none"></path>
+        </svg>
+    </div>
 
     <!-- Botón flotante de Contacto (Gmail) -->
     <a href="mailto:tu_correo_utopia@gmail.com" class="fixed bottom-6 left-6 w-14 h-14 bg-red-500 hover:bg-red-600 text-white rounded-full flex items-center justify-center text-2xl shadow-[0_4px_20px_rgba(239,68,68,0.5)] z-50 transition-transform hover:scale-110">
@@ -34,18 +52,18 @@ HTML
         <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <a href="#" class="font-heading text-2xl font-bold tracking-tight text-white hover:opacity-90 transition cursor-pointer">
-                    Utop<span class="text-cyan-300">IA</span>
+                    Utop<span class="text-orange-400">IA</span>
                 </a>
             </div>
             <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
-                <a href="#sobre-nosotros" class="hover:text-cyan-300 transition">Quiénes Somos</a>
-                <a href="#areas" class="hover:text-cyan-300 transition">De qué hablaremos</a>
-                <a href="#metodo" class="hover:text-cyan-300 transition">Metodología</a>
-                <a href="#publicaciones" class="hover:text-cyan-300 transition">Publicaciones</a>
-                <a href="#equipo" class="hover:text-cyan-300 transition">Equipo</a>
+                <a href="#sobre-nosotros" class="hover:text-orange-400 transition">Quiénes Somos</a>
+                <a href="#areas" class="hover:text-orange-400 transition">De qué hablaremos</a>
+                <a href="#metodo" class="hover:text-orange-400 transition">Metodología</a>
+                <a href="#publicaciones" class="hover:text-orange-400 transition">Publicaciones</a>
+                <a href="#equipo" class="hover:text-orange-400 transition">Equipo</a>
             </div>
             <div class="flex items-center">
-                <a href="https://instagram.com/utopia_biotech" target="_blank" class="bg-cyan-400/10 border border-cyan-400/30 hover:bg-cyan-400 hover:text-navy-pastel-dark text-cyan-300 font-semibold text-sm px-5 py-2.5 rounded-xl transition flex items-center gap-2">
+                <a href="https://instagram.com/utopia_biotech" target="_blank" class="bg-orange-500/10 border border-orange-500/30 hover:bg-orange-500 hover:text-navy-pastel-dark text-orange-400 font-semibold text-sm px-5 py-2.5 rounded-xl transition flex items-center gap-2">
                     <i class="fa-brands fa-instagram text-base"></i> Síguenos
                 </a>
                 
@@ -61,7 +79,7 @@ HTML
     <header class="relative pt-36 pb-24 md:pt-40 md:pb-32 px-6 overflow-hidden">
         <div class="relative z-10 max-w-4xl mx-auto text-center">
             
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-400/10 border border-cyan-400/30 text-cyan-300 text-xs font-semibold tracking-wide uppercase mb-8 shadow-sm">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-semibold tracking-wide uppercase mb-8 shadow-sm">
                 <i class="fa-solid fa-dna"></i> Proyecto de Biotecnología UMH
             </div>
 
@@ -82,9 +100,9 @@ HTML
     <!-- Quiénes Somos -->
     <section id="sobre-nosotros" class="py-24 px-6 border-t border-navy bg-navy-pastel-dark">
         <div class="max-w-4xl mx-auto text-center">
-            <span class="text-cyan-300 font-semibold uppercase tracking-widest text-xs block mb-3">¿Quiénes somos?</span>
+            <span class="text-orange-400 font-semibold uppercase tracking-widest text-xs block mb-3">¿Quiénes somos?</span>
             <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-8">
-                SOMOS <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">UtopIA</span>
+                SOMOS <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-400">UtopIA</span>
             </h2>
             <div class="bg-navy-pastel-light p-10 rounded-2xl border border-navy shadow-lg text-left max-w-3xl mx-auto">
                 <p class="text-xl text-white mb-6 leading-relaxed">
@@ -101,23 +119,23 @@ HTML
     <section id="areas" class="py-24 px-6 border-t border-navy">
         <div class="max-w-6xl mx-auto">
             <div class="text-center max-w-xl mx-auto mb-16">
-                <span class="text-cyan-300 font-semibold uppercase tracking-widest text-xs block mb-2">¿De qué hablaremos?</span>
+                <span class="text-orange-400 font-semibold uppercase tracking-widest text-xs block mb-2">¿De qué hablaremos?</span>
                 <h2 class="font-heading text-3xl md:text-4xl font-bold text-white">La IA, del laboratorio al paciente</h2>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-navy-pastel-light p-8 rounded-2xl border border-navy hover:border-cyan-400 transition duration-300">
-                    <div class="text-cyan-300 font-heading text-3xl font-bold mb-4 opacity-80">01</div>
+                <div class="bg-navy-pastel-light p-8 rounded-2xl border border-navy hover:border-orange-500 transition duration-300">
+                    <div class="text-orange-400 font-heading text-3xl font-bold mb-4 opacity-80">01</div>
                     <h3 class="font-heading text-xl font-bold text-white mb-3">Descubrimiento de fármacos</h3>
                     <p class="text-slate-300 text-sm leading-relaxed font-light">Cómo la IA ayuda a encontrar moléculas que podrían convertirse en medicamentos.</p>
                 </div>
-                <div class="bg-navy-pastel-light p-8 rounded-2xl border border-navy hover:border-cyan-400 transition duration-300">
-                    <div class="text-cyan-300 font-heading text-3xl font-bold mb-4 opacity-80">02</div>
+                <div class="bg-navy-pastel-light p-8 rounded-2xl border border-navy hover:border-orange-500 transition duration-300">
+                    <div class="text-orange-400 font-heading text-3xl font-bold mb-4 opacity-80">02</div>
                     <h3 class="font-heading text-xl font-bold text-white mb-3">Diagnóstico y ensayos clínicos</h3>
                     <p class="text-slate-300 text-sm leading-relaxed font-light">Cómo puede mejorar el diagnóstico y estudiar mejor si un tratamiento funciona.</p>
                 </div>
-                <div class="bg-navy-pastel-light p-8 rounded-2xl border border-navy hover:border-cyan-400 transition duration-300">
-                    <div class="text-cyan-300 font-heading text-3xl font-bold mb-4 opacity-80">03</div>
+                <div class="bg-navy-pastel-light p-8 rounded-2xl border border-navy hover:border-orange-500 transition duration-300">
+                    <div class="text-orange-400 font-heading text-3xl font-bold mb-4 opacity-80">03</div>
                     <h3 class="font-heading text-xl font-bold text-white mb-3">Ética, privacidad y legislación</h3>
                     <p class="text-slate-300 text-sm leading-relaxed font-light">Qué riesgos plantea y qué garantías son necesarias para usarla con confianza.</p>
                 </div>
@@ -129,13 +147,13 @@ HTML
     <section id="metodo" class="py-24 px-6 border-t border-navy bg-navy-pastel-dark">
         <div class="max-w-6xl mx-auto">
             <div class="text-center max-w-xl mx-auto mb-16">
-                <span class="text-cyan-300 font-semibold uppercase tracking-widest text-xs block mb-2">Así lo vamos a contar</span>
+                <span class="text-orange-400 font-semibold uppercase tracking-widest text-xs block mb-2">Así lo vamos a contar</span>
                 <h2 class="font-heading text-3xl md:text-4xl font-bold text-white">De la pregunta a la respuesta</h2>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 <div class="bg-navy-pastel flex gap-6 p-6 rounded-2xl border border-navy">
-                    <div class="text-cyan-300 font-heading text-3xl font-bold opacity-80">01</div>
+                    <div class="text-orange-400 font-heading text-3xl font-bold opacity-80">01</div>
                     <div>
                         <h3 class="font-heading text-xl font-bold text-white mb-2">La visión de la gente</h3>
                         <p class="text-slate-300 text-sm font-light">Entrevistas para conocer qué pensamos y qué dudas tenemos sobre la IA en salud.</p>
@@ -143,7 +161,7 @@ HTML
                 </div>
 
                 <div class="bg-navy-pastel flex gap-6 p-6 rounded-2xl border border-navy">
-                    <div class="text-cyan-300 font-heading text-3xl font-bold opacity-80">02</div>
+                    <div class="text-orange-400 font-heading text-3xl font-bold opacity-80">02</div>
                     <div>
                         <h3 class="font-heading text-xl font-bold text-white mb-2">La visión experta</h3>
                         <p class="text-slate-300 text-sm font-light">Conversaciones con científicos y profesionales que trabajan en investigación y biomedicina.</p>
@@ -151,7 +169,7 @@ HTML
                 </div>
 
                 <div class="bg-navy-pastel flex gap-6 p-6 rounded-2xl border border-navy">
-                    <div class="text-cyan-300 font-heading text-3xl font-bold opacity-80">03</div>
+                    <div class="text-orange-400 font-heading text-3xl font-bold opacity-80">03</div>
                     <div>
                         <h3 class="font-heading text-xl font-bold text-white mb-2">Del descubrimiento al medicamento</h3>
                         <p class="text-slate-300 text-sm font-light">Publicaciones para entender, paso a paso, cómo se desarrolla un fármaco.</p>
@@ -159,7 +177,7 @@ HTML
                 </div>
 
                 <div class="bg-navy-pastel flex gap-6 p-6 rounded-2xl border border-navy">
-                    <div class="text-cyan-300 font-heading text-3xl font-bold opacity-80">04</div>
+                    <div class="text-orange-400 font-heading text-3xl font-bold opacity-80">04</div>
                     <div>
                         <h3 class="font-heading text-xl font-bold text-white mb-2">IA al día</h3>
                         <p class="text-slate-300 text-sm font-light">Curiosidades, avances y noticias sobre inteligencia artificial y biomedicina.</p>
@@ -173,173 +191,171 @@ HTML
     <section id="publicaciones" class="py-24 px-6 border-t border-navy">
         <div class="max-w-6xl mx-auto relative">
             <div class="text-center max-w-xl mx-auto mb-12">
-                <span class="text-cyan-300 font-semibold uppercase tracking-widest text-xs block mb-2">Divulgación y artículos</span>
+                <span class="text-orange-400 font-semibold uppercase tracking-widest text-xs block mb-2">Divulgación y artículos</span>
                 <h2 class="font-heading text-3xl md:text-4xl font-bold text-white">Últimas Publicaciones</h2>
             </div>
 
             <!-- Botón Flecha Izquierda -->
-            <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-6 z-20 bg-navy-pastel border border-navy hover:bg-cyan-400 hover:text-navy-pastel-dark text-cyan-300 w-12 h-12 rounded-full flex items-center justify-center shadow-xl transition cursor-pointer">
+            <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-6 z-20 bg-navy-pastel border border-navy hover:bg-orange-500 hover:text-navy-pastel-dark text-orange-400 w-12 h-12 rounded-full flex items-center justify-center shadow-xl transition cursor-pointer">
                 <i class="fa-solid fa-chevron-left"></i>
             </button>
 
             <!-- Botón Flecha Derecha -->
-            <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 md:translate-x-6 z-20 bg-navy-pastel border border-navy hover:bg-cyan-400 hover:text-navy-pastel-dark text-cyan-300 w-12 h-12 rounded-full flex items-center justify-center shadow-xl transition cursor-pointer">
+            <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 md:translate-x-6 z-20 bg-navy-pastel border border-navy hover:bg-orange-500 hover:text-navy-pastel-dark text-orange-400 w-12 h-12 rounded-full flex items-center justify-center shadow-xl transition cursor-pointer">
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
 
             <!-- Contenedor del Carrusel -->
             <div id="carousel" class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar py-4 px-2">
 
-<!-- Publicación del algoritmo al medicamento 2 (publicacion 8) -->
-<div class="snap-start shrink-0 w-72 md:w-80 bg-navy-pastel-light rounded-2xl border border-navy overflow-hidden shadow-lg hover:border-cyan-400 hover:scale-[1.02] transition duration-300 group flex flex-col">
-    <!-- Imagen de la publicación (lleva a la sección concreta de publicaciones.html) -->
-    <a href="publicaciones.html#pub-8" class="h-60 overflow-hidden block">
-        <img src="1.png" alt="¿Cómo diseña la IA un nuevo fármaco?" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-    </a>
+                <!-- Publicación del algoritmo al medicamento 2 (publicacion 8) -->
+                <div class="snap-start shrink-0 w-72 md:w-80 bg-navy-pastel-light rounded-2xl border border-navy overflow-hidden shadow-lg hover:border-orange-500 hover:scale-[1.02] transition duration-300 group flex flex-col">
+                    <!-- Imagen de la publicación -->
+                    <a href="publicaciones.html#pub-8" class="h-60 overflow-hidden block">
+                        <img src="1.png" alt="¿Cómo diseña la IA un nuevo fármaco?" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </a>
 
-    <!-- Contenido y texto -->
-    <div class="p-5 flex flex-col flex-grow">
-        <a href="publicaciones.html#pub-8" class="block">
-            <h3 class="font-heading text-lg font-bold text-white group-hover:text-cyan-300 transition mb-2 leading-snug">
-                ¿Cómo diseña la IA un nuevo fármaco?
-            </h3>
-        </a>
-        <p class="text-slate-300 text-xs font-light mb-5 flex-grow leading-relaxed">
-            Una explicación detallada del paso a paso de la creación de un fármaco, desde el descubrimiento de una diana, hasta la formación de moléculas, y cómo la IA facilita este camino.
-        </p>
+                    <!-- Contenido y texto -->
+                    <div class="p-5 flex flex-col flex-grow">
+                        <a href="publicaciones.html#pub-8" class="block">
+                            <h3 class="font-heading text-lg font-bold text-white group-hover:text-orange-400 transition mb-2 leading-snug">
+                                ¿Cómo diseña la IA un nuevo fármaco?
+                            </h3>
+                        </a>
+                        <p class="text-slate-300 text-xs font-light mb-5 flex-grow leading-relaxed">
+                            Una explicación detallada del paso a paso de la creación de un fármaco, desde el descubrimiento de una diana, hasta la formación de moléculas, y cómo la IA facilita este camino.
+                        </p>
 
-        <!-- Botones de acción en la parte inferior -->
-        <div class="flex items-center justify-between pt-3 border-t border-navy/50 mt-auto">
-            <!-- Enlace a publicaciones.html -->
-            <a href="publicaciones.html#pub-8" class="text-cyan-300 hover:underline text-xs font-semibold flex items-center gap-1.5">
-                Leer artículo <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </a>
+                        <!-- Botones de acción en la parte inferior -->
+                        <div class="flex items-center justify-between pt-3 border-t border-navy/50 mt-auto">
+                            <!-- Enlace a publicaciones.html -->
+                            <a href="publicaciones.html#pub-8" class="text-orange-400 hover:underline text-xs font-semibold flex items-center gap-1.5">
+                                Leer artículo <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
 
-            <!-- Enlace directo al post en Instagram -->
-            <a href="https://www.instagram.com/p/DekDeOZiEUh/?utm_source=ig_web_copy_link&xtok=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" class="bg-cyan-400/10 hover:bg-cyan-400 hover:text-navy-pastel-dark text-cyan-300 text-xs font-semibold px-3 py-1.5 rounded-lg border border-cyan-400/30 transition flex items-center gap-2">
-                Ver publicación <i class="fa-brands fa-instagram text-sm"></i>
-            </a>
-        </div>
-    </div>
-</div>
+                            <!-- Enlace directo al post en Instagram -->
+                            <a href="https://www.instagram.com/p/DekDeOZiEUh/?utm_source=ig_web_copy_link&xtok=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" class="bg-orange-500/10 hover:bg-orange-500 hover:text-navy-pastel-dark text-orange-400 text-xs font-semibold px-3 py-1.5 rounded-lg border border-orange-500/30 transition flex items-center gap-2">
+                                Ver publicación <i class="fa-brands fa-instagram text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 
-             <!-- Publicación del algoritmo al medicamento 1 (publicacion 3) -->
-<div class="snap-start shrink-0 w-72 md:w-80 bg-navy-pastel-light rounded-2xl border border-navy overflow-hidden shadow-lg hover:border-cyan-400 hover:scale-[1.02] transition duration-300 group flex flex-col">
-    <!-- Imagen de la publicación (lleva a la sección concreta de publicaciones.html) -->
-    <a href="publicaciones.html#pub-3" class="h-60 overflow-hidden block">
-        <img src="publicacion_delalgoritmo_al_medicamento_1.1.png" alt="¿Cómo ayuda la IA a encontrar dianas terapéuticas?" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-    </a>
+                <!-- Publicación del algoritmo al medicamento 1 (publicacion 3) -->
+                <div class="snap-start shrink-0 w-72 md:w-80 bg-navy-pastel-light rounded-2xl border border-navy overflow-hidden shadow-lg hover:border-orange-500 hover:scale-[1.02] transition duration-300 group flex flex-col">
+                    <!-- Imagen de la publicación -->
+                    <a href="publicaciones.html#pub-3" class="h-60 overflow-hidden block">
+                        <img src="publicacion_delalgoritmo_al_medicamento_1.1.png" alt="¿Cómo ayuda la IA a encontrar dianas terapéuticas?" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </a>
 
-    <!-- Contenido y texto -->
-    <div class="p-5 flex flex-col flex-grow">
-        <a href="publicaciones.html#pub-3" class="block">
-            <h3 class="font-heading text-lg font-bold text-white group-hover:text-cyan-300 transition mb-2 leading-snug">
-                ¿Cómo ayuda la IA a encontrar dianas terapéuticas?
-            </h3>
-        </a>
-        <p class="text-slate-300 text-xs font-light mb-5 flex-grow leading-relaxed">
-            Para ser capaces de crear un fármaco, lo primero es conocer puntos críticos biológicos importantes que afectan a la enfermedad a la que va dirigida.
+                    <!-- Contenido y texto -->
+                    <div class="p-5 flex flex-col flex-grow">
+                        <a href="publicaciones.html#pub-3" class="block">
+                            <h3 class="font-heading text-lg font-bold text-white group-hover:text-orange-400 transition mb-2 leading-snug">
+                                ¿Cómo ayuda la IA a encontrar dianas terapéuticas?
+                            </h3>
+                        </a>
+                        <p class="text-slate-300 text-xs font-light mb-5 flex-grow leading-relaxed">
+                            Para ser capaces de crear un fármaco, lo primero es conocer puntos críticos biológicos importantes que afectan a la enfermedad a la que va dirigida.
 
-Las llamamos Dianas Terapéuticas.
+                            Las llamamos Dianas Terapéuticas.
 
-Pero… ¿Qué son exactamente?
-        </p>
+                            Pero… ¿Qué son exactamente?
+                        </p>
 
-        <!-- Botones de acción en la parte inferior -->
-        <div class="flex items-center justify-between pt-3 border-t border-navy/50 mt-auto">
-            <!-- Enlace a publicaciones.html -->
-            <a href="publicaciones.html#pub-3" class="text-cyan-300 hover:underline text-xs font-semibold flex items-center gap-1.5">
-                Leer artículo <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </a>
+                        <!-- Botones de acción en la parte inferior -->
+                        <div class="flex items-center justify-between pt-3 border-t border-navy/50 mt-auto">
+                            <!-- Enlace a publicaciones.html -->
+                            <a href="publicaciones.html#pub-3" class="text-orange-400 hover:underline text-xs font-semibold flex items-center gap-1.5">
+                                Leer artículo <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
 
-            <!-- Enlace directo al post en Instagram -->
-            <a href="https://www.instagram.com/p/Dd_XyWFCIg8/?utm_source=ig_web_copy_link&obrf=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" class="bg-cyan-400/10 hover:bg-cyan-400 hover:text-navy-pastel-dark text-cyan-300 text-xs font-semibold px-3 py-1.5 rounded-lg border border-cyan-400/30 transition flex items-center gap-2">
-                Ver publicación <i class="fa-brands fa-instagram text-sm"></i>
-            </a>
-        </div>
-    </div>
-</div>  
+                            <!-- Enlace directo al post en Instagram -->
+                            <a href="https://www.instagram.com/p/Dd_XyWFCIg8/?utm_source=ig_web_copy_link&obrf=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" class="bg-orange-500/10 hover:bg-orange-500 hover:text-navy-pastel-dark text-orange-400 text-xs font-semibold px-3 py-1.5 rounded-lg border border-orange-500/30 transition flex items-center gap-2">
+                                Ver publicación <i class="fa-brands fa-instagram text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>  
                 
-            <!-- Publicación 1 -->
-<div class="snap-start shrink-0 w-72 md:w-80 bg-navy-pastel-light rounded-2xl border border-navy overflow-hidden shadow-lg hover:border-cyan-400 hover:scale-[1.02] transition duration-300 group flex flex-col">
-    <!-- Imagen de la publicación (lleva a publicaciones.html) -->
-    <a href="publicaciones.html#pub-1" class="h-60 overflow-hidden block">
-        <img src="imagenpublicacion1_1.png" alt="Publicación 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-    </a>
+                <!-- Publicación 1 -->
+                <div class="snap-start shrink-0 w-72 md:w-80 bg-navy-pastel-light rounded-2xl border border-navy overflow-hidden shadow-lg hover:border-orange-500 hover:scale-[1.02] transition duration-300 group flex flex-col">
+                    <!-- Imagen de la publicación -->
+                    <a href="publicaciones.html#pub-1" class="h-60 overflow-hidden block">
+                        <img src="imagenpublicacion1_1.png" alt="Publicación 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </a>
 
-    <!-- Contenido y texto -->
-    <div class="p-5 flex flex-col flex-grow">
-        <a href="publicaciones.html" class="block">
-            <h3 class="font-heading text-lg font-bold text-white group-hover:text-cyan-300 transition mb-2 leading-snug">
-                ¿Puede la IA ayudar a descubrir nuevos fármacos?
-            </h3>
-        </a>
-        <p class="text-slate-300 text-xs font-light mb-5 flex-grow leading-relaxed">
-            Un recorrido detallado sobre quiénes somos, nuestros objetivos y cómo vamos a cumplirlos.
-        </p>
+                    <!-- Contenido y texto -->
+                    <div class="p-5 flex flex-col flex-grow">
+                        <a href="publicaciones.html#pub-1" class="block">
+                            <h3 class="font-heading text-lg font-bold text-white group-hover:text-orange-400 transition mb-2 leading-snug">
+                                ¿Puede la IA ayudar a descubrir nuevos fármacos?
+                            </h3>
+                        </a>
+                        <p class="text-slate-300 text-xs font-light mb-5 flex-grow leading-relaxed">
+                            Un recorrido detallado sobre quiénes somos, nuestros objetivos y cómo vamos a cumplirlos.
+                        </p>
 
-        <!-- Botones de acción en la parte inferior -->
-        <div class="flex items-center justify-between pt-3 border-t border-navy/50 mt-auto">
-            <!-- Enlace a la web -->
-            <a href="publicaciones.html#pub-1" class="text-cyan-300 hover:underline text-xs font-semibold flex items-center gap-1.5">
-                Leer artículo <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </a>
+                        <!-- Botones de acción en la parte inferior -->
+                        <div class="flex items-center justify-between pt-3 border-t border-navy/50 mt-auto">
+                            <!-- Enlace a la web -->
+                            <a href="publicaciones.html#pub-1" class="text-orange-400 hover:underline text-xs font-semibold flex items-center gap-1.5">
+                                Leer artículo <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
 
-            <!-- Enlace a Instagram -->
-            <a href="https://www.instagram.com/p/DdwmIQmCBJ6/?vrfl=Y3luMXZycnI3OTF1" target="_blank" rel="noopener noreferrer" class="bg-cyan-400/10 hover:bg-cyan-400 hover:text-navy-pastel-dark text-cyan-300 text-xs font-semibold px-3 py-1.5 rounded-lg border border-cyan-400/30 transition flex items-center gap-2">
-                Ver publicación <i class="fa-brands fa-instagram text-sm"></i>
-            </a>
-        </div>
-    </div>
-</div>    
-
-                
+                            <!-- Enlace a Instagram -->
+                            <a href="https://www.instagram.com/p/DdwmIQmCBJ6/?vrfl=Y3luMXZycnI3OTF1" target="_blank" rel="noopener noreferrer" class="bg-orange-500/10 hover:bg-orange-500 hover:text-navy-pastel-dark text-orange-400 text-xs font-semibold px-3 py-1.5 rounded-lg border border-orange-500/30 transition flex items-center gap-2">
+                                Ver publicación <i class="fa-brands fa-instagram text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>    
 
             </div>
 
             <!-- Enlace para ver todo -->
             <div class="text-center mt-10">
-                <a href="publicaciones.html" class="inline-flex items-center gap-2 bg-cyan-400/10 border border-cyan-400/30 hover:bg-cyan-400 hover:text-navy-pastel-dark text-cyan-300 font-semibold text-sm px-6 py-3 rounded-xl transition">
+                <a href="publicaciones.html" class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/30 hover:bg-orange-500 hover:text-navy-pastel-dark text-orange-400 font-semibold text-sm px-6 py-3 rounded-xl transition">
                     Ver todas las publicaciones <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Equipo (Sin imágenes) -->
+    <!-- Equipo -->
     <section id="equipo" class="py-24 px-6 border-t border-navy bg-navy-pastel-dark">
         <div class="max-w-5xl mx-auto">
             <div class="text-center max-w-xl mx-auto mb-16">
-                <span class="text-cyan-300 font-semibold uppercase tracking-widest text-xs block mb-2">Nuestro Equipo</span>
+                <span class="text-orange-400 font-semibold uppercase tracking-widest text-xs block mb-2">Nuestro Equipo</span>
                 <h2 class="font-heading text-3xl md:text-4xl font-bold text-white">
-                    Estudiantes detrás de <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">UtopIA</span>
+                    Estudiantes detrás de <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-400">UtopIA</span>
                 </h2>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-cyan-400/50 transition">
+                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-orange-500/50 transition">
                     <h3 class="font-heading text-lg font-bold text-white">Álvaro Barberá Rivas</h3>
-                    <p class="text-xs text-cyan-300 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
+                    <p class="text-xs text-orange-400 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
                 </div>
-                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-cyan-400/50 transition">
+                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-orange-500/50 transition">
                     <h3 class="font-heading text-lg font-bold text-white">Javier Sáez Leyva</h3>
-                    <p class="text-xs text-cyan-300 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
+                    <p class="text-xs text-orange-400 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
                 </div>
-                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-cyan-400/50 transition">
+                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-orange-500/50 transition">
                     <h3 class="font-heading text-lg font-bold text-white">Alberto Esteban López</h3>
-                    <p class="text-xs text-cyan-300 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
+                    <p class="text-xs text-orange-400 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
                 </div>
-                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-cyan-400/50 transition">
+                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-orange-500/50 transition">
                     <h3 class="font-heading text-lg font-bold text-white">Jesús Montes Maciá</h3>
-                    <p class="text-xs text-cyan-300 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
+                    <p class="text-xs text-orange-400 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
                 </div>
-                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-cyan-400/50 transition">
+                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-orange-500/50 transition">
                     <h3 class="font-heading text-lg font-bold text-white">Iago Brugarolas Luján</h3>
-                    <p class="text-xs text-cyan-300 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
+                    <p class="text-xs text-orange-400 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
                 </div>
-                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-cyan-400/50 transition">
+                <div class="bg-navy-pastel-light rounded-xl border border-navy text-center p-6 shadow-sm hover:shadow-md hover:border-orange-500/50 transition">
                     <h3 class="font-heading text-lg font-bold text-white">Carlos Pastor Martín</h3>
-                    <p class="text-xs text-cyan-300 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
+                    <p class="text-xs text-orange-400 font-medium uppercase tracking-wider mt-1">Biotecnología UMH</p>
                 </div>
             </div>
         </div>
@@ -351,13 +367,13 @@ Pero… ¿Qué son exactamente?
             <h2 class="font-heading text-2xl font-bold text-white mb-8">Esto es solo el principio</h2>
             
             <div class="flex justify-center gap-6 mb-12">
-                <a href="https://instagram.com/utopia_biotech" target="_blank" class="w-12 h-12 rounded-full bg-navy-pastel border border-navy flex items-center justify-center text-cyan-300 hover:bg-cyan-400 hover:text-navy-pastel-dark transition duration-300 text-xl">
+                <a href="https://instagram.com/utopia_biotech" target="_blank" class="w-12 h-12 rounded-full bg-navy-pastel border border-navy flex items-center justify-center text-orange-400 hover:bg-orange-500 hover:text-navy-pastel-dark transition duration-300 text-xl">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="https://tiktok.com/@utopia_biotech" target="_blank" class="w-12 h-12 rounded-full bg-navy-pastel border border-navy flex items-center justify-center text-cyan-300 hover:bg-cyan-400 hover:text-navy-pastel-dark transition duration-300 text-xl">
+                <a href="https://tiktok.com/@utopia_biotech" target="_blank" class="w-12 h-12 rounded-full bg-navy-pastel border border-navy flex items-center justify-center text-orange-400 hover:bg-orange-500 hover:text-navy-pastel-dark transition duration-300 text-xl">
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
-                <a href="https://x.com/utopia_biotech" target="_blank" class="w-12 h-12 rounded-full bg-navy-pastel border border-navy flex items-center justify-center text-cyan-300 hover:bg-cyan-400 hover:text-navy-pastel-dark transition duration-300 text-xl">
+                <a href="https://x.com/utopia_biotech" target="_blank" class="w-12 h-12 rounded-full bg-navy-pastel border border-navy flex items-center justify-center text-orange-400 hover:bg-orange-500 hover:text-navy-pastel-dark transition duration-300 text-xl">
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
             </div>
@@ -408,7 +424,6 @@ Pero… ¿Qué son exactamente?
                 carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
             });
         }
-    </script>   
+    </script>    
 </body>
 </html>
-
